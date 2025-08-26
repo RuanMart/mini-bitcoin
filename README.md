@@ -42,16 +42,16 @@
 
 ```
 mini-bitcoin-java/
-??? pom.xml
-??? src/
-?   ??? main/java/ruan/martellote/
-?   ?   ??? crypto/        ? HashUtils, MerkleTree
-?   ?   ??? core/          ? BlockHeader, Block
-?   ?   ??? pow/           ? Difficulty, Miner
-?   ?   ??? chain/         ? Blockchain
-?   ?   ??? app/           ? DemoMain, DemoMainBitcoinLike
-?   ??? resources/
-??? test/java/... (JUnit 5, opcional)
+|-- pom.xml
+|-- src/
+|   |-- main/java/ruan/martellote/
+|   |   |-- crypto/        -> HashUtils, MerkleTree
+|   |   |-- core/          -> BlockHeader, Block
+|   |   |-- pow/           -> Difficulty, Miner
+|   |   |-- chain/         -> Blockchain
+|   |   Main
+|   |-- resources/
+|-- test/java/... (JUnit 5, opcional)
 ```
 
 ---
