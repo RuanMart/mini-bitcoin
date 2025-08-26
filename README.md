@@ -72,24 +72,24 @@ mvn -q -DskipTests=true clean package
 ```
 
 ### 2. Demo simples (zeros em hex)
-Edite a dificuldade em `DemoMain.java`:
+Edite a dificuldade em `Main.java`:
 ```java
 int difficultyHexZeros = 4;
 ```
 Rode:
 ```bash
-mvn -q exec:java -Dexec.mainClass="ruan.martellote.app.DemoMain"
+mvn -q exec:java -Dexec.mainClass="ruan.martellote.Main"
 ```
 
 ### 3. Demo estilo Bitcoin (`nBits`)
-Edite em `DemoMainBitcoinLike.java`:
+Edite em `Main.java`:
 ```java
 final int N_BITS_GENESIS = 0x1D00FFFF;
 final int N_BITS_BLOCKS  = 0x1C0FFFFF;
 ```
 Rode:
 ```bash
-mvn -q exec:java -Dexec.mainClass="ruan.martellote.app.DemoMainBitcoinLike"
+mvn -q exec:java -Dexec.mainClass="ruan.martellote.Main"
 ```
 
 ---
