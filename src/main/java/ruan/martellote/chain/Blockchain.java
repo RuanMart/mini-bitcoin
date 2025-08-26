@@ -13,7 +13,6 @@ import java.util.List;
 public class Blockchain {
 
     private final List<Block> chain = new ArrayList<>();
-    // Semântica atual: número de zeros hexadecimais no início do hash (Difficulty.meetsDifficultyHexPrefix)
     private final int difficultyHexZeros;
     private final Miner miner = new Miner();
 
@@ -46,7 +45,6 @@ public class Blockchain {
         return Collections.unmodifiableList(new ArrayList<>(chain));
     }
 
-    // ====================== Criação de blocos ======================
 
     public synchronized Block createGenesis(List<byte[]> txids) {
         if (txids == null || txids.isEmpty()) {
@@ -173,7 +171,6 @@ public class Blockchain {
         return true;
     }
 
-    // Debug: imprime um sumário da cadeia
     public synchronized void printSummary() {
         System.out.println("Blockchain height: " + getHeight());
         for (int i = 0; i < chain.size(); i++) {

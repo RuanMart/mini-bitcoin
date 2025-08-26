@@ -59,7 +59,6 @@ public class Miner {
                 return new MinerResult(true, nonce, hash, attempts, end - start);
             }
 
-            // Opcional: log periódico para acompanhar progresso
              if ((attempts & ((1 << 20) - 1)) == 0) { // a cada ~1M tentativas
                  System.out.println("Tried: " + attempts + " H/s≈" + ((attempts * 1000.0) / (System.currentTimeMillis() - start)));
              }
