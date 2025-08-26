@@ -17,28 +17,28 @@
 
 ---
 
-## ? Funcionalidades
+## Funcionalidades
 
-- ? **Hashing**
+- **Hashing**
     - SHA-256
     - Double SHA-256 (SHA-256d)
-- ? **Árvore de Merkle** para cálculo da Merkle Root
-- ? **Blocos e Cabeçalhos**
+- **Árvore de Merkle** para cálculo da Merkle Root
+- **Blocos e Cabeçalhos**
     - `BlockHeader`: version, previousHash, merkleRoot, timeStamp, bits, nonce
     - Serialização determinística + double SHA-256
-- ?? **Prova de Trabalho (PoW)**
+- **Prova de Trabalho (PoW)**
     - Dificuldade simples (zeros hex no prefixo)
     - Dificuldade estilo Bitcoin (`nBits` compacto)
-- ? **Mineração**
+- **Mineração**
     - Busca de nonce simples
     - Modo "Bitcoin-like" com atualização de timestamp
-- ?? **Blockchain in-memory**
+- **Blockchain in-memory**
     - Bloco gênesis
     - Encadeamento e validação de blocos
 
 ---
 
-## ? Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 mini-bitcoin-java/
@@ -56,7 +56,7 @@ mini-bitcoin-java/
 
 ---
 
-## ? Pré-requisitos
+## Pré-requisitos
 
 - **Java 17+**
 - **Maven 3.8+**
@@ -64,7 +64,7 @@ mini-bitcoin-java/
 
 ---
 
-## ?? Como Rodar
+## Como Rodar
 
 ### 1. Compilar
 ```bash
@@ -94,7 +94,7 @@ mvn -q exec:java -Dexec.mainClass="ruan.martellote.app.DemoMainBitcoinLike"
 
 ---
 
-## ? Exemplo de Saída
+## Exemplo de Saída
 
 ```
 ==== BLOCK (FOUND) ====
@@ -111,7 +111,7 @@ duration  : 33 ms (? 2,61 MH/s)
 
 ---
 
-## ?? Ajustando a Dificuldade
+## Ajustando a Dificuldade
 
 - **Zeros em hex (simples)**
   ```java
@@ -132,14 +132,14 @@ duration  : 33 ms (? 2,61 MH/s)
 
 ---
 
-## ? Testes
+## Testes
 
 - **HashUtilsTest** ? valida SHA-256 e SHA-256d
 - **MerkleTreeTest** ? compara Merkle Root conhecida
 
 ---
 
-## ?? Roadmap
+## Roadmap
 
 - [ ] Transações reais com serialização própria
 - [ ] Ajuste automático de dificuldade (retarget simplificado)
@@ -148,7 +148,7 @@ duration  : 33 ms (? 2,61 MH/s)
 
 ---
 
-## ? Licença
+## Licença
 
 Este projeto é distribuído sob a licença **MIT**.  
 Sinta-se livre para usar, modificar e aprender com ele.
@@ -156,6 +156,6 @@ Sinta-se livre para usar, modificar e aprender com ele.
 ---
 
 <p align="center">
-  Feito por <b>Ruan Luis de Oliveira Martellote</b> ???<br/>
+  Feito por <b>Ruan Luis de Oliveira Martellote</b><br/>
   <i>"Estudar blockchain minerando conhecimento!"</i>
 </p>
