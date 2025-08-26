@@ -1,4 +1,4 @@
-# ? Mini Bitcoin (Java)
+# Mini Bitcoin (Java)
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Mini Bitcoin Logo" width="120"/>
